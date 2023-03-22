@@ -1,0 +1,21 @@
+<section class="container">
+
+  <div class="card">
+    <div class="card-header">Add/Edit Country</div>
+    <div class="card-body">
+      <form action="/action_page.php">
+        <label for="country">Country Name:</label><br>
+        <input type="text" id="country" name="name" placeholder="country" [(ngModel)]="countries.name"><br>
+        <label for="area">Area:</label><br>
+        <input type="text" id="area" name="area" placeholder="area" [(ngModel)]="countries.area"><br>
+        <label for="population">Population:</label><br>
+        <input type="text" id="population" name="population" placeholder="population" [(ngModel)]="countries.population"><br><br>
+
+        <button type="button" class="btn btn-primary" (click)="updateContry()">Update Country</button>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+
